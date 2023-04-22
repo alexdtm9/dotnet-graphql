@@ -11,4 +11,6 @@ public class Platform
     public string Name { get; set; } = null!;
 
     public string? LicenseKey { get; set; }
+
+    public ICollection<Command> Commands { get; set; } = new List<Command>();
 }
